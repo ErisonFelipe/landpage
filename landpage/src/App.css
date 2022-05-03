@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Ubuntu:ital,wght@1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: linear-gradient(
+    255deg,
+    #a5e9e9 0,
+    #45eeff 25%,
+    #53bcf2 50%,
+    #518db4 75%,
+    #46647c 100%
+  );
+}

@@ -1,0 +1,28 @@
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+  }
+  
+  .cabecalho-img {
+    border-radius: 80px;
+  }
+  
+  .cabecalho-menu {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .cabecalho-menu-item {
+    font-family: "Lora", serif;
+    font-weight: 400px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .cabecalho-menu-item:hover {
+    color: aliceblue;
+  }

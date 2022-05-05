@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React, {Component, useState} from "react";
 import './Main.css';
 import Logo from './image/logo.jpg';
-
+import Modal from './Modal';
 export default class Main extends Component {
     render(){
         return(
@@ -11,8 +11,7 @@ export default class Main extends Component {
             <div class="conteudo-principal-escrito">
                 <h1 class="conteudo-principal-escrito-titulo">GS - Tech</h1>
                 <h2 class="conteudo-principal-escrito-subtitulo">Manutenção de Celular</h2>
-                <button type="button" class="conteudo-principal-escrito-botao" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Orçamento</button>
+                <Modal></Modal>
             </div>
             <img class="conteudo-principal-img" src={Logo} height="250px" alt="Imagem do Logo"/>
         </section>

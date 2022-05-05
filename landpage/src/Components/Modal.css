@@ -1,0 +1,90 @@
+.modal-fade{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.modal-dialog {
+    width: 60%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #f0f8ff;
+    font-family: "Lora", serif;
+    color: #59429d;     
+  }
+  
+  .btn-close {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+  }
+  /* #subtitulo {
+    font-family: "Ubuntu", sans-serif;
+    color: #380061;
+    margin-left: 7%;
+  }
+  
+  fieldset {
+    padding: 100px;
+    border: 0;
+  }
+  
+  input,
+  select,
+  textarea {
+    border-radius: 5px;
+  }
+  
+  textarea {
+    width: 80%;
+  }
+  
+  .campo {
+    margin-bottom: 1em;
+  }
+  
+  .campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+  }
+  
+  fieldset .grupo .campo {
+    float: left;
+    margin-right: 1em;
+  }
+  
+  .campo input[type="text"],
+  .campo input[type="email"],
+  .campo select,
+  .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0, 2);
+    display: block;
+  }
+  
+  .campo select option {
+    padding-right: 1em;
+  }
+  
+  .campo input:focus,
+  .campo select:focus,
+  .campo textarea:focus {
+    background-color: #e0e0f8;
+  }
+  
+  fieldset div {
+    margin: 10px;
+    padding: 2px;
+  } */
+  

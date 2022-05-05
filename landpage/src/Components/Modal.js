@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+import React, {useState} from "react";
+import './Modal.css';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>GS - TEch, Manutenção de Celular </title>
-    <script>
-        var myModal = document.getElementById('myModal');
-        var myInput = document.getElementById('myInput');
+export default function Modal(){
+    const [isModalVisible, setIsModalVisible] = useState(false);
 
-        myModal.addEventListener('shown.bs.modal', function () {
-            myInput.focus()
-        });
-    </script>
-</head>
+    // document.getElementsById("close").addEventListener("click", Fechar);
 
-<body>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    // function Fechar(){
+    //     let modal = document.getElementsByClassName('modal-fade');
+
+    //     modal.style.display = 'none';
+    // };
+
+    return(
+        <>
+             <button type="button" class="conteudo-principal-escrito-botao" data-bs-toggle="modal"
+            data-bs-target="#exampleModal" onClick={()=>setIsModalVisible(true)}>Orçamento</button>
+            {isModalVisible ?     <div class="modal-fade" id="exampleModal" >
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Orçamento</h5>
 
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" id="close" onClick={()=>setIsModalVisible(false)}>Fechar</button>
                 </div>
                 <form>
                     <div class="modal-body">
@@ -35,19 +31,19 @@
                         <fieldset class="grupo">
                             <div>
                                 <label for="nome">Nome completo:</label>
-                                <input type="text" name="nome" id="nome" required>
+                                <input type="text" name="nome" id="nome" required/>
                             </div>
                             <div>
                                 <label for="celular">Celular:</label>
-                                <input type="tel" name="celular" id="celular" placeholder="11 99999-9999" required>
+                                <input type="tel" name="celular" id="celular" placeholder="11 99999-9999" required/>
                             </div>
                             <div>
                                 <label for="email">Email:</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email"/>
                             </div>
                             <div>
                                 <label for="endereco">Endereço:</label>
-                                <input type="text" name="endereco" id="endereco" placeholder="nome da rua" required>
+                                <input type="text" name="endereco" id="endereco" placeholder="nome da rua" required/>
                             </div>
                         </fieldset>
                         <fieldset class="grupo">
@@ -63,15 +59,15 @@
                                     <option value="nokia">Nokia</option>
                                     <option value="outro">Outro</option>
                                 </select>
-                                <input type="text" name="qual" id="qual" placeholder="Qual?">
+                                <input type="text" name="qual" id="qual" placeholder="Qual?"/>
                             </div>
                             <div>
                                 <label for="modelo">Modelo do celular:</label>
-                                <input type="text" name="modelo" id="modelo" placeholder="digite o modelo do celular">
+                                <input type="text" name="modelo" id="modelo" placeholder="digite o modelo do celular"/>
                             </div>
                             <div>
                                 <label for="msg">Descreva o problema do celular:</label>
-                                <textarea id="msg" name="msg" rows="4" cols="50"></textarea><br>
+                                <textarea id="msg" name="msg" rows="4" cols="50"></textarea><br/>
                                 <button type="reset" class="btn btn-secondary">Apagar</button>
                             </div>
                         </fieldset>
@@ -82,10 +78,7 @@
                 </form>
             </div>
         </div>
-    </div>    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
+    </div> : null}
+        </>
+    )
+}

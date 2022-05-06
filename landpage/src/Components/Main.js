@@ -1,6 +1,6 @@
-import React, {Component, useState} from "react";
+import React, {Component} from "react";
 import './Main.css';
-import Logo from './image/logo.jpg';
+import Logo from './image/logo.png';
 import Modal from './Modal';
 export default class Main extends Component {
     render(){
@@ -9,8 +9,8 @@ export default class Main extends Component {
                 <main class="conteudo">
                 <section class="conteudo-principal">
             <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo">GS - Tech</h1>
-                <h2 class="conteudo-principal-escrito-subtitulo">Manutenção de Celular</h2>
+                <h1 class="conteudo-principal-escrito-titulo">All Tech</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Soluções e Manutenção</h2>
                 <Modal></Modal>
             </div>
             <img class="conteudo-principal-img" src={Logo} height="250px" alt="Imagem do Logo"/>

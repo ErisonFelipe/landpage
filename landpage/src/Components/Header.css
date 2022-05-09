@@ -1,3 +1,8 @@
+.header {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 49%, rgba(128,128,128,1) 100%);      
+}
+
 .cabecalho {
     display: flex;
     flex-direction: row;
@@ -12,7 +17,7 @@
   
   .cabecalho-menu {
     display: flex;
-    gap: 40px;
+    gap: 40px;    
   }
   
   .cabecalho-menu-item {
@@ -20,9 +25,9 @@
     font-weight: 400px;
     font-size: 18px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
   }
   
   .cabecalho-menu-item:hover {
-    color: aliceblue;
+    color: dodgerblue;
   }

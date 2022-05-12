@@ -1,5 +1,5 @@
 .conteudo {
-    border-top: 0.4px solid #fff;
+    border-top: 15px solid #fff;
     margin-bottom: 48px;
   }
   
@@ -41,7 +41,9 @@
   }
   
   .conteudo-principal-escrito-botao:hover {
-    background-color: aliceblue;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(169,169,169,1) 49%, rgba(128,128,128,1) 100%);
+    color: #fff;
   }
   
   .conteudo-principal-img {
@@ -59,7 +61,7 @@
   }
   
   .conteudo-secundario-titulo {
-    border-top: 0.4px solid #fff;
+    border-top: 0.4px solid dodgerblue;
     padding-top: 20px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;

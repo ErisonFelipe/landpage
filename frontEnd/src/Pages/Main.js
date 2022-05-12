@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import './Main.css';
 import Logo from './image/logo.png';
-import Modal from './Modal';
-import Card from './Card';
+import Modal from '../Components/Modal';
+import Card from '../Components/Card';
 export default class Main extends Component {
     render(){
         return(

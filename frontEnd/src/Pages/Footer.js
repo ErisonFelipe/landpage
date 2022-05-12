@@ -18,12 +18,11 @@ export default class Footer extends Component {
                         <div class="whats">
                             <p><FaWhatsapp/> Acompanhe</p>
                         </div>                        
-                    </div>
-                    <div class="created">
-                        <p>Creado por: <a href="">Erison Felipe</a></p>
-                        
-                    </div>                    
+                    </div>                                      
                  </footer>
+                 <div class="created">
+                        <p>Creado por: <a href="">Erison Felipe</a></p>                        
+                    </div> 
             </div>
         )
     }

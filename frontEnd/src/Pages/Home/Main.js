@@ -1,9 +1,15 @@
 import React, {Component} from "react";
 import './Main.css';
-import Logo from './image/logo.png';
-import Modal from '../Components/Modal';
-import Card from '../Components/Card';
+import Logo from '../image/logo.png';
+import Modal from '../../Components/Modal';
+import Card from '../../Components/Card';
+
 export default class Main extends Component {
+    // const criaCard = ()=>{
+    //     document
+    // }
+
+    // window.addEventListener("load", criaCard);
     render(){
         return(
             <div className="main">
@@ -17,8 +23,8 @@ export default class Main extends Component {
             <img class="conteudo-principal-img" src={Logo} height="250px" alt="Imagem do Logo"/>
         </section>
         <section class="conteudo-secundario">
-            <h3 class="conteudo-secundario-titulo">Depoimentos</h3>
-            <Card></Card>
+            <h3 class="conteudo-secundario-titulo">Depoimentos</h3>            
+            <Card></Card>            
         </section>
     </main> 
             </div>

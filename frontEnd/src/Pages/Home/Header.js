@@ -1,7 +1,7 @@
 import React, {Component} from  'react';
 import { FaTools, FaCartPlus, FaInfo } from "react-icons/fa";
 import './Header.css';
-import Logo from './image/logo.png';
+import Logo from '../image/logo.png';
 
 export default class Header extends Component {
     render(){
@@ -13,7 +13,7 @@ export default class Header extends Component {
             </div>              
             </header>
             <nav className="cabecalho-menu">
-                    <a className='cabecalho-menu-item' alt="Serviços"><FaTools/> Serviços</a>
+                    <a className='cabecalho-menu-item'><FaTools alt="Serviços"/> Serviços</a>
                     <a className="cabecalho-menu-item"><FaCartPlus/> Produtos</a>
                     <a className="cabecalho-menu-item"><FaInfo/> Sobre</a>
                 </nav> 

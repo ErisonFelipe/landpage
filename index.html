@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteudo {
+            border: solid 1px black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+    <script> 
+    function criaCard(){        
+        document.getElementById("btn").addEventListener("click", ()=>{
+            const section = document.createElement('section');
+            section.setAttribute("class", "conteudo");
+
+            const h5 = document.createElement("h5");
+            h5.setAttribute("class", "nome");
+            section.appendChild(h5);
+
+            const p = document.createElement("p");
+            p.setAttribute("class", "comentario");
+            section.appendChild(p);
+
+            document.body.appendChild(section);
+
+            var texto = document.getElementById("texto").value;
+            var texto2 = document.getElementById("texto2").value;
+            h5.innerHTML = texto;
+            p.innerHTML = texto2;
+                            
+                console.log(texto)                
+        });
+    };       
+               
+
+      
+
+        window.addEventListener("load", criaCard);
+    </script>
+</head>
+<body>
+    <input type="text" id="texto">
+    <input type="text" id="texto2">
+    <button id="btn">Adicionar comentario</button>
+</body>
+</html>

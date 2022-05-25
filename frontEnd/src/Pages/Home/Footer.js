@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import './Footer.css';
-import Logo from './image/logo.png';
+import Logo from '../image/logo.png';
 
 export default class Footer extends Component {
     render(){
